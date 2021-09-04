@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1495578942200-c5f5d2137def?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=754&q=80');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+.add {
+    background-color: #0984e3;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.note {
+    background-color: white;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    margin: 20px;
+    margin-bottom: 40px;
+    width: 400px;
+}
+
+.note .tools {
+    background-color: #fbc531;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;    
+    color: white;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.note .main {
+    background-color: #eee;
+    overflow: hidden;
+    padding-left: 1rem;
+    width: 400px;
+    height: 400px;
+}
+
+.note textarea {
+    border: none;
+    font-size: 1.1rem;
+    height: 400px;
+    width: 400px;
+    font-family: inherit;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
