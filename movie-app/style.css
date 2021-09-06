@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #192a56;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+header {
+    background-color: #273c75;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h2 {
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+header input {
+    border-radius: 10px;
+    width: 20rem;
+    background-color: transparent;
+    border: 2px solid #9aa5c5;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    caret-color: #fff;
+    color: #fff;
+    font-family: inherit;
+}
+
+header input:focus {
+    outline: none;
+}
+
+header input::placeholder {
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+.movie {
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    background-color: #273c75;
+    overflow: hidden;
+    margin: 1rem;
+    width: 250px;
+    position: relative;
+}
+
+.movie img {
+    max-width: 100%;
+}
+
+.movie-info {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.overview {
+    color: black;
+    background-color: #ffffff;
+    padding: 2rem;
+    overflow: auto;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in ;
+
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #192a56;
+    border-radius: 3px;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green{
+    color: rgb(21, 255, 21);
+}
+
+.movie-info span.orange{
+    color: rgb(255, 166, 0);
+}
+
+.movie-info span.red{
+    color: rgb(255, 0, 0);
+}
